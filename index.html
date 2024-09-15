@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: violet;
+        }
+        h2 {
+            text-align: left;
+            color: blue;
+        }
+        video{
+            width: 100%;
+            height: 200px;
+        }
+        .inline{
+            width: 300px;
+            display: inline-block;
+            margin-left: 30px;
+        }
+        .align {
+            text-align: center;
+        }
+        p{
+            background-color: blueviolet;
+            color: white;
+        }
+        footer{
+            width: 100%;
+            color: white;
+            background-color: aqua;
+        }
+        @media (max-width :680px) {
+            .inline{
+                width: 100%;
+                display: block;
+            }
+            video{
+                width: 60%;
+                padding-left: 15%;
+                object-fit: cover;
+            }
+            p{
+                width: 60%;
+                margin-left: 15%;
+                text-align: justify;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Your View</title>
+</head>
+<body>
+    <h1>Stream Your View</h1>
+    <div>
+        <h2>Jujutsu Kaisen Season 1</h2>
+        <div class = "inline">
+            <video src = "./assets/videos/Episode 01.mp4" controls>Season 01 Episode 01 Jujutsu kisen</video>
+            <p class = "align">Season 01 Episode 01 Jujutsu kisen</p>
+        </div>
+        <div class ="inline">
+            <video src = "./assets/videos/Episode 02.mp4" controls>Season 01 Episode 02 Jujutsu kisen</video>
+            <p class = "align">Season 01 Episode 02 Jujutsu kisen</p>
+        </div>
+        <div class = "inline">
+            <a href = "./index2.html">next-></a>
+        </div>
+    </div>
+    <footer>
+        © Copyright 2024
+    </footer>
+</body>
+</html>
